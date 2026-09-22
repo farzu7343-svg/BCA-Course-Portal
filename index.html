@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Department of Computer Applications (BCA) | Apex Institute of Technology</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-blue-600/30 text-blue-400 font-semibold text-[11px] uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-ping"></span> Live Updates
+        </span>
+        <span class="text-slate-300 font-medium">Admissions Open for BCA Batch 2026–2029 | NAAC 'A+' Accredited Campus</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400">
+        <a href="tel:+9101128765432" class="hover:text-white transition-colors flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          +91 (011) 2876-5432
+        </a>
+        <span>|</span>
+        <a href="mailto:hod.bca@apex.edu" class="hover:text-white transition-colors flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          hod.bca@apex.edu
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Navigation -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-200/80 transition-smooth">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo Branding -->
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-blue-700 to-indigo-600 flex items-center justify-center text-white font-black text-xl shadow-md group-hover:scale-105 transition-transform">
+            BCA
+          </div>
+          <div>
+            <span class="block text-lg font-bold text-slate-900 tracking-tight leading-snug">Department of Computer Applications</span>
+            <span class="block text-xs font-semibold text-blue-600 tracking-wider uppercase">Apex Institute of Technology</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="hidden lg:flex items-center gap-7">
+          <a href="index.html" class="nav-link text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">Home</a>
+          <a href="about.html" class="nav-link text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">About Department</a>
+          
+          <!-- Courses Dropdown -->
+          <div class="relative group">
+            <a href="courses.html" class="nav-link text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors flex items-center gap-1 py-2">
+              Courses
+              <svg class="w-4 h-4 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute top-full left-0 w-64 bg-white rounded-xl shadow-xl border border-slate-100 py-2 hidden group-hover:block transition-smooth">
+              <a href="courses.html" class="block px-4 py-2.5 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 font-medium">
+                <span class="block font-semibold">Bachelor of Computer Applications</span>
+                <span class="block text-xs text-slate-500">3-Year Full-Time Degree (BCA)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Semesters Dropdown -->
+          <div class="relative group">
+            <a href="semesters.html" class="nav-link text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors flex items-center gap-1 py-2">
+              Semesters
+              <svg class="w-4 h-4 text-slate-400 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="absolute top-full left-0 w-56 bg-white rounded-xl shadow-xl border border-slate-100 py-2 hidden group-hover:block transition-smooth">
+              <a href="semesters.html?sem=1" class="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 font-medium">Semester 1</a>
+              <a href="semesters.html?sem=2" class="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 font-medium">Semester 2</a>
+              <a href="semesters.html?sem=3" class="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 font-medium">Semester 3</a>
+              <a href="semesters.html?sem=4" class="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 font-medium">Semester 4</a>
+              <a href="semesters.html?sem=5" class="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 font-medium">Semester 5</a>
+              <a href="semesters.html?sem=6" class="block px-4 py-2 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 font-medium">Semester 6</a>
+              <div class="border-t border-slate-100 my-1"></div>
+              <a href="semesters.html" class="block px-4 py-2 text-xs font-semibold text-blue-600 hover:underline">View All Curriculum &rarr;</a>
+            </div>
+          </div>
+
+          <a href="faculty.html" class="nav-link text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">Faculty</a>
+          <a href="facilities.html" class="nav-link text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">Facilities</a>
+          <a href="notices.html" class="nav-link text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">Notices & Events</a>
+          <a href="contact.html" class="nav-link text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">Contact</a>
+        </nav>
+
+        <!-- CTA Action -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="contact.html#enquiry" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl shadow-sm hover:shadow-md transition-smooth">
+            Apply / Enquire
+          </a>
+        </div>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-600 hover:text-blue-600 hover:bg-slate-100 transition-colors" aria-label="Toggle Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden flex-col gap-1 py-4 border-t border-slate-200">
+        <a href="index.html" class="px-3 py-2 text-sm font-medium text-slate-800 rounded-lg hover:bg-blue-50">Home</a>
+        <a href="about.html" class="px-3 py-2 text-sm font-medium text-slate-800 rounded-lg hover:bg-blue-50">About Department</a>
+        
+        <!-- Mobile Courses Submenu -->
+        <div>
+          <button class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 text-sm font-medium text-slate-800 rounded-lg hover:bg-blue-50" data-target="m-courses-menu">
+            <span>Courses</span>
+            <svg class="dropdown-chevron w-4 h-4 text-slate-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="m-courses-menu" class="hidden pl-4 pr-2 py-1 space-y-1 bg-slate-50 rounded-lg">
+            <a href="courses.html" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-blue-600">BCA (Bachelor of Computer Applications)</a>
+          </div>
+        </div>
+
+        <!-- Mobile Semesters Submenu -->
+        <div>
+          <button class="mobile-dropdown-btn w-full flex items-center justify-between px-3 py-2 text-sm font-medium text-slate-800 rounded-lg hover:bg-blue-50" data-target="m-sem-menu">
+            <span>Semesters</span>
+            <svg class="dropdown-chevron w-4 h-4 text-slate-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="m-sem-menu" class="hidden pl-4 pr-2 py-1 space-y-1 bg-slate-50 rounded-lg">
+            <a href="semesters.html?sem=1" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-blue-600">Semester 1</a>
+            <a href="semesters.html?sem=2" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-blue-600">Semester 2</a>
+            <a href="semesters.html?sem=3" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-blue-600">Semester 3</a>
+            <a href="semesters.html?sem=4" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-blue-600">Semester 4</a>
+            <a href="semesters.html?sem=5" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-blue-600">Semester 5</a>
+            <a href="semesters.html?sem=6" class="block px-3 py-1.5 text-xs text-slate-600 hover:text-blue-600">Semester 6</a>
+          </div>
+        </div>
+
+        <a href="faculty.html" class="px-3 py-2 text-sm font-medium text-slate-800 rounded-lg hover:bg-blue-50">Faculty</a>
+        <a href="facilities.html" class="px-3 py-2 text-sm font-medium text-slate-800 rounded-lg hover:bg-blue-50">Facilities</a>
+        <a href="notices.html" class="px-3 py-2 text-sm font-medium text-slate-800 rounded-lg hover:bg-blue-50">Notices & Events</a>
+        <a href="contact.html" class="px-3 py-2 text-sm font-medium text-slate-800 rounded-lg hover:bg-blue-50">Contact</a>
+        <a href="contact.html#enquiry" class="mt-2 text-center py-2.5 bg-blue-600 text-white rounded-lg text-sm font-semibold">Apply / Enquire</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Live Notice Ticker -->
+  <div class="bg-blue-50/80 border-b border-blue-100 py-2.5 px-4">
+    <div class="max-w-7xl mx-auto flex items-center gap-3">
+      <div class="flex items-center gap-2 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shrink-0">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+        Announcements
+      </div>
+      <div class="ticker-wrap flex-1 text-sm text-slate-700">
+        <div class="ticker-move">
+          <span class="inline-block mx-4 font-medium"><span class="text-blue-600 font-bold">•</span> Odd Semester (1, 3, 5) Mid-Term exams commence October 12, 2026.</span>
+          <span class="inline-block mx-4 font-medium"><span class="text-emerald-600 font-bold">•</span> HackBCA 2026: 36-Hour National Codefest registration is now open!</span>
+          <span class="inline-block mx-4 font-medium"><span class="text-rose-600 font-bold">•</span> Campus Placement Drive: Wipro & Tech Mahindra on-campus for 6th Semesters.</span>
+          <span class="inline-block mx-4 font-medium"><span class="text-indigo-600 font-bold">•</span> Hands-on Workshop on 'Docker & Cloud Native Microservices' on October 5.</span>
+        </div>
+      </div>
+      <a href="notices.html" class="text-xs font-bold text-blue-600 hover:text-blue-800 hover:underline shrink-0 hidden sm:inline-block">View All Notices &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-gradient text-white py-16 lg:py-24 relative overflow-hidden">
+    <!-- Background subtle glow elements -->
+    <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-blue-500/20 blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-indigo-500/20 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-semibold uppercase tracking-wider">
+            <span>✨ Center of Excellence in Computing</span>
+          </div>
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+            Building Future <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Software Architects</span> & AI Innovators
+          </h1>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+            The Department of Computer Applications equips aspiring tech leaders with a modern curriculum, cutting-edge AI & Cloud computing labs, agile software engineering practices, and top-tier global placement pathways.
+          </p>
+          
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="courses.html" class="px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-blue-500/30 transition-smooth flex items-center gap-2">
+              <span>Explore BCA Program</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <a href="semesters.html" class="px-6 py-3.5 bg-slate-800/80 hover:bg-slate-800 text-slate-200 hover:text-white font-semibold rounded-xl border border-slate-700 transition-smooth flex items-center gap-2">
+              <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              <span>Semesters 1–6 Syllabus</span>
+            </a>
+          </div>
+
+          <div class="pt-6 grid grid-cols-3 gap-6 border-t border-slate-800 text-slate-300">
+            <div>
+              <span class="block text-2xl sm:text-3xl font-bold text-white">94.8%</span>
+              <span class="text-xs text-slate-400 font-medium">Placement Track Record</span>
+            </div>
+            <div>
+              <span class="block text-2xl sm:text-3xl font-bold text-white">6 Labs</span>
+              <span class="text-xs text-slate-400 font-medium">Specialized High-Tech Labs</span>
+            </div>
+            <div>
+              <span class="block text-2xl sm:text-3xl font-bold text-white">70+</span>
+              <span class="text-xs text-slate-400 font-medium">Hiring Industry Partners</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Card -->
+        <div class="lg:col-span-5">
+          <div class="glass-card rounded-2xl p-6 sm:p-8 bg-slate-900/60 border border-slate-700/60 shadow-2xl relative">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-700">
+              <div>
+                <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Quick Portal</span>
+                <h3 class="text-xl font-bold text-white mt-0.5">Semester Navigation</h3>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-300 text-xs font-semibold">3-Year CBCS</span>
+            </div>
+
+            <p class="text-slate-300 text-xs mt-3 leading-relaxed">
+              Explore subject syllabi, credit weighting, lab assignments, and project requirements for any semester:
+            </p>
+
+            <div class="grid grid-cols-2 gap-3 mt-5">
+              <a href="semesters.html?sem=1" class="p-3.5 rounded-xl bg-slate-800/80 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 transition-smooth group">
+                <span class="block text-xs font-bold text-blue-400 group-hover:text-blue-300">Semester 1</span>
+                <span class="block text-xs text-slate-300 font-medium mt-1">C & Math Fundamentals</span>
+              </a>
+              <a href="semesters.html?sem=2" class="p-3.5 rounded-xl bg-slate-800/80 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 transition-smooth group">
+                <span class="block text-xs font-bold text-blue-400 group-hover:text-blue-300">Semester 2</span>
+                <span class="block text-xs text-slate-300 font-medium mt-1">C++ & Data Structures</span>
+              </a>
+              <a href="semesters.html?sem=3" class="p-3.5 rounded-xl bg-slate-800/80 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 transition-smooth group">
+                <span class="block text-xs font-bold text-blue-400 group-hover:text-blue-300">Semester 3</span>
+                <span class="block text-xs text-slate-300 font-medium mt-1">DBMS & Core Java</span>
+              </a>
+              <a href="semesters.html?sem=4" class="p-3.5 rounded-xl bg-slate-800/80 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 transition-smooth group">
+                <span class="block text-xs font-bold text-blue-400 group-hover:text-blue-300">Semester 4</span>
+                <span class="block text-xs text-slate-300 font-medium mt-1">Python, Web & Networks</span>
+              </a>
+              <a href="semesters.html?sem=5" class="p-3.5 rounded-xl bg-slate-800/80 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 transition-smooth group">
+                <span class="block text-xs font-bold text-blue-400 group-hover:text-blue-300">Semester 5</span>
+                <span class="block text-xs text-slate-300 font-medium mt-1">Cloud, AI & Mobile Apps</span>
+              </a>
+              <a href="semesters.html?sem=6" class="p-3.5 rounded-xl bg-slate-800/80 hover:bg-blue-600/30 border border-slate-700 hover:border-blue-500 transition-smooth group">
+                <span class="block text-xs font-bold text-blue-400 group-hover:text-blue-300">Semester 6</span>
+                <span class="block text-xs text-slate-300 font-medium mt-1">Security & Capstone Project</span>
+              </a>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-700 flex items-center justify-between text-xs text-slate-400">
+              <span>CBCS 134 Total Credits</span>
+              <a href="semesters.html" class="text-blue-400 font-semibold hover:underline">Full Scheme &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOD Message Section -->
+  <section class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-4 text-center lg:text-left">
+          <div class="relative inline-block">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" alt="HOD Dr. Rajesh Kumar Sharma" class="w-64 h-64 sm:w-72 sm:h-72 object-cover rounded-2xl shadow-xl mx-auto border-4 border-white">
+            <div class="absolute -bottom-4 -right-2 bg-blue-600 text-white p-3 rounded-xl shadow-lg hidden sm:block">
+              <span class="block text-xs font-bold uppercase">Experience</span>
+              <span class="text-base font-extrabold">18+ Years</span>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-8 space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider">
+            From the Head of Department
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            "Bridging Academic Rigor with Industry-Ready Technology Innovations"
+          </h2>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Welcome to the Department of Computer Applications. Our Bachelor of Computer Applications (BCA) program has been meticulously crafted to address the rapidly evolving frontiers of software engineering, artificial intelligence, cloud architectures, and cybersecurity.
+          </p>
+          <p class="text-slate-600 text-base leading-relaxed">
+            Our mission is not merely to impart conceptual literacy, but to cultivate proactive builders, problem solvers, and ethical engineers who make meaningful contributions to the global IT ecosystem through hands-on laboratory immersions, hackathons, and industry mentorship.
+          </p>
+          <div class="pt-2">
+            <h4 class="text-lg font-bold text-slate-900">Dr. Rajesh Kumar Sharma</h4>
+            <p class="text-sm font-semibold text-blue-600">Head of Department & Professor, Ph.D. (Computer Applications)</p>
+            <p class="text-xs text-slate-500 mt-0.5">Specialization: Machine Learning, Artificial Intelligence & Data Science</p>
+          </div>
+          <div class="pt-2">
+            <a href="about.html" class="inline-flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-800 hover:underline">
+              Read Complete Department Vision & Mission &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Pillars / Why Choose BCA -->
+  <section class="py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Why Study With Us</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Holistic Academic & Technical Excellence</h2>
+        <p class="text-slate-600 text-sm mt-2">Discover how our state-approved curriculum prepares you for competitive global careers in computing.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 card-hover shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Modern Curriculum</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Covers Full Stack (MERN), Python, Java, Cloud Computing, Cyber Security, and AI fundamentals aligned with contemporary industry standards.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 card-hover shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">6 Dedicated High-Tech Labs</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            High-performance workstations with NVIDIA GPU clusters, IoT sensor workbenches, and dual-boot enterprise Linux development environments.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 card-hover shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Hackathons & Coding Clubs</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Vibrant student-run developer clubs, national 36-hour hackathons, open-source sprints, and competitive coding mentorship on LeetCode and CodeChef.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 card-hover shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Proven Placements</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Dedicated training & placement cell with rigorous mock interviews, resume bootcamps, and top recruitment drives from Infosys, TCS, Wipro, and Amazon.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Facilities Preview -->
+  <section class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Infrastructure</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 mt-1">World-Class Laboratories & Facilities</h2>
+          <p class="text-slate-600 text-sm mt-1">State-of-the-art computational infrastructure to turn theoretical ideas into viable software.</p>
+        </div>
+        <a href="facilities.html" class="inline-flex items-center gap-2 text-sm font-bold text-blue-600 hover:text-blue-800 hover:underline">
+          View All Facilities & Labs &rarr;
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 card-hover shadow-sm">
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=600" alt="Advanced Software Lab" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-xs font-bold text-blue-600 uppercase">Lab 01</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Software Development Lab</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">60 Workstations configured with Core i7 13th Gen processors, full-stack stacks, and containerized dev environments.</p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 card-hover shadow-sm">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=600" alt="AI & HPC Lab" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-xs font-bold text-indigo-600 uppercase">Lab 02</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">AI & Machine Learning Lab</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Equipped with NVIDIA RTX 4080 GPUs for deep neural network training, computer vision models, and LLM experiments.</p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 card-hover shadow-sm">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=600" alt="Department Library" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-xs font-bold text-emerald-600 uppercase">Knowledge Center</span>
+            <h3 class="text-lg font-bold text-slate-900 mt-1 mb-2">Departmental Digital Library</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">8,000+ technical volumes, 20 high-speed terminals, and institutional subscriptions to IEEE Xplore, ACM, and Springer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notices & Events Preview -->
+  <section class="py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- Left: Latest Notices -->
+        <div class="lg:col-span-7">
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Notice Board</span>
+              <h2 class="text-2xl font-extrabold text-slate-900 mt-0.5">Recent Department Circulars</h2>
+            </div>
+            <a href="notices.html" class="text-xs font-bold text-blue-600 hover:underline">View All &rarr;</a>
+          </div>
+
+          <div class="space-y-3.5">
+            <div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm hover:border-blue-300 transition-colors flex items-start justify-between gap-4">
+              <div>
+                <div class="flex items-center gap-2 mb-1.5">
+                  <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-700">Exam Notice</span>
+                  <span class="text-xs text-slate-400">September 18, 2026</span>
+                </div>
+                <h4 class="text-sm font-bold text-slate-900">Schedule for BCA Odd Semester (Sem 1, 3, 5) Mid-Term Examinations</h4>
+                <p class="text-xs text-slate-600 mt-1">Mid-Term exams commence from October 12, 2026. Hall tickets available on portal.</p>
+              </div>
+              <a href="notices.html" class="text-xs font-semibold text-blue-600 shrink-0 hover:underline">Details &rarr;</a>
+            </div>
+
+            <div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm hover:border-blue-300 transition-colors flex items-start justify-between gap-4">
+              <div>
+                <div class="flex items-center gap-2 mb-1.5">
+                  <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-700">Hackathon</span>
+                  <span class="text-xs text-slate-400">September 15, 2026</span>
+                </div>
+                <h4 class="text-sm font-bold text-slate-900">HackBCA 2026: 36-Hour National Codefest Registrations Open</h4>
+                <p class="text-xs text-slate-600 mt-1">Cash prizes worth ₹2,50,000. Open to all students across India.</p>
+              </div>
+              <a href="notices.html" class="text-xs font-semibold text-blue-600 shrink-0 hover:underline">Details &rarr;</a>
+            </div>
+
+            <div class="bg-white rounded-xl p-4 border border-slate-200 shadow-sm hover:border-blue-300 transition-colors flex items-start justify-between gap-4">
+              <div>
+                <div class="flex items-center gap-2 mb-1.5">
+                  <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-700">Placement</span>
+                  <span class="text-xs text-slate-400">September 10, 2026</span>
+                </div>
+                <h4 class="text-sm font-bold text-slate-900">Campus Placement Drive: Wipro & Tech Mahindra for 6th Semester</h4>
+                <p class="text-xs text-slate-600 mt-1">Registration deadline is September 25, 2026 via T&P office.</p>
+              </div>
+              <a href="notices.html" class="text-xs font-semibold text-blue-600 shrink-0 hover:underline">Details &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Upcoming Events -->
+        <div class="lg:col-span-5">
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Calendar</span>
+              <h2 class="text-2xl font-extrabold text-slate-900 mt-0.5">Upcoming Events</h2>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div class="bg-gradient-to-br from-blue-900 to-indigo-950 text-white rounded-2xl p-6 shadow-md">
+              <span class="inline-block px-2.5 py-0.5 rounded bg-blue-500/30 text-blue-300 text-xs font-bold uppercase mb-2">Flagship Techfest</span>
+              <h3 class="text-lg font-bold">HackBCA 2026</h3>
+              <p class="text-slate-300 text-xs mt-1 leading-relaxed">National level hackathon bringing together students, mentors, and angel investors for 36 continuous hours of building.</p>
+              <div class="mt-4 pt-3 border-t border-slate-700/60 flex items-center justify-between text-xs text-blue-300 font-medium">
+                <span>🗓️ Oct 24-25, 2026</span>
+                <span>📍 HPC Lab & Auditorium</span>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+              <span class="inline-block px-2 py-0.5 rounded bg-purple-50 text-purple-700 text-xs font-bold uppercase mb-1.5">Workshop</span>
+              <h4 class="text-sm font-bold text-slate-900">Generative AI & LLM Systems Masterclass</h4>
+              <p class="text-slate-600 text-xs mt-1">Interactive architecture session on building RAG workflows and AI agent pipelines.</p>
+              <div class="mt-3 text-xs text-slate-500 font-medium">🗓️ Nov 04, 2026 • 02:00 PM - 05:00 PM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-14 bg-gradient-to-r from-blue-700 via-blue-800 to-indigo-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
+      <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight">Ready to Begin Your Career in Computer Applications?</h2>
+      <p class="text-blue-100 text-base max-w-2xl mx-auto">
+        Join our vibrant student community at Apex Institute. Inquire today about admissions, scholarships, and campus visits.
+      </p>
+      <div class="pt-2 flex flex-wrap justify-center gap-4">
+        <a href="contact.html#enquiry" class="px-7 py-3 bg-white text-blue-700 hover:bg-slate-100 font-bold rounded-xl shadow-lg transition-smooth">
+          Submit Admission Enquiry
+        </a>
+        <a href="courses.html" class="px-7 py-3 bg-blue-600/60 hover:bg-blue-600 text-white border border-blue-300/40 font-bold rounded-xl transition-smooth">
+          Download Program Brochure
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-sm mt-auto border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <!-- Col 1: About Department -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center text-white font-extrabold text-base">
+              BCA
+            </div>
+            <div>
+              <span class="block text-base font-bold text-white leading-tight">Department of Computer Applications</span>
+              <span class="block text-xs text-blue-400 font-semibold">Apex Institute of Technology</span>
+            </div>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            Empowering students with comprehensive foundations in algorithms, full-stack software development, artificial intelligence, cloud architectures, and ethical leadership.
+          </p>
+          <div class="text-xs text-slate-500">
+            Approved by AICTE • Affiliated to State Technical University • NAAC 'A+'
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Department</a></li>
+            <li><a href="courses.html" class="hover:text-white transition-colors">BCA Course Overview</a></li>
+            <li><a href="faculty.html" class="hover:text-white transition-colors">Faculty Directory</a></li>
+            <li><a href="facilities.html" class="hover:text-white transition-colors">Laboratories & Facilities</a></li>
+            <li><a href="notices.html" class="hover:text-white transition-colors">Notices & Circulars</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact Department</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Semesters Links -->
+        <div>
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Semesters (1 to 6)</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="semesters.html?sem=1" class="hover:text-white transition-colors">Semester 1 (C & Math)</a></li>
+            <li><a href="semesters.html?sem=2" class="hover:text-white transition-colors">Semester 2 (C++ & DS)</a></li>
+            <li><a href="semesters.html?sem=3" class="hover:text-white transition-colors">Semester 3 (DBMS & Java)</a></li>
+            <li><a href="semesters.html?sem=4" class="hover:text-white transition-colors">Semester 4 (Web & Python)</a></li>
+            <li><a href="semesters.html?sem=5" class="hover:text-white transition-colors">Semester 5 (Cloud & AI)</a></li>
+            <li><a href="semesters.html?sem=6" class="hover:text-white transition-colors">Semester 6 (Capstone & Sec)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div>
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Department Office</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Room C-101, Block C, Innovation Avenue, Knowledge Park III, New Delhi - 110025
+          </p>
+          <p class="text-xs text-slate-300 mt-2 font-medium">
+            Phone: +91 (011) 2876-5432<br>
+            Email: hod.bca@apex.edu
+          </p>
+          <div class="mt-4 pt-3 border-t border-slate-800">
+            <span class="block text-[11px] text-slate-500">Office Hours:</span>
+            <span class="text-xs text-slate-400">Mon - Sat: 9:00 AM - 5:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>&copy; 2026 Department of Computer Applications (BCA), Apex Institute. All Rights Reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="contact.html" class="hover:text-slate-400">Campus Location</a>
+          <span>•</span>
+          <a href="notices.html" class="hover:text-slate-400">Student Circulars</a>
+          <span>•</span>
+          <a href="about.html" class="hover:text-slate-400">Accreditations</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
